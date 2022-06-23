@@ -1,0 +1,261 @@
+$primery_color: #1eacc7
+$danger_color: #FF5656
+
+*
+  font-family: 'Roboto', sans-serif
+
+header
+  position: relative
+  height: 50px
+
+nav
+  position: fixed
+  width: 100%
+  height: 50px
+  background-color: #212121
+  z-index: 2
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+
+  .menu_link
+    font-size: 15px
+    font-weight: 300
+    color: #ffffff
+    text-decoration: none
+    cursor: pointer
+
+    &:hover
+      text-decoration: underline
+
+  .menu_item
+    &::after
+      content: ''
+      border-right: 2px dotted black
+      padding-right: 28px
+
+    &:last-child::after
+      border: none
+
+.subheader
+  position: absolute
+  top: 50px
+  width: 100%
+  z-index: 1
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+
+  .subheader_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+
+  .subheader_title
+    margin-top: 6px
+    opacity: 0.5
+    font-size: 13px
+    font-weight: 100
+    color: #ffffff
+
+  .subheader_call
+    margin-top: 19px
+    font-size: 12px
+    font-weight: 300
+    color: #ffffff
+    text-align: right
+
+  .subheader_phone
+    display: block
+    margin-top: 8px
+    font-size: 22px
+    font-weight: 400
+    line-height: 12px
+    text-decoration: none
+    color: #ffffff
+    text-align: right
+
+  .subheader_btn
+    margin-top: 19px
+    width: 178px
+    height: 52px
+    background-image: linear-gradient(0deg, $primery_color 0%, #4ce2ff 100%)
+    border: none
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11)
+    border-radius: 8px
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
+    color: #ffffff
+    cursor: pointer
+
+    &:hover
+      background-image: linear-gradient(0deg, #0a7489 0%, #318596 100%)
+
+.promo
+  background: url('../img/background/uber_bg.jpg') center (center / cover) no-repeat
+  min-height: 799px
+  padding: 150px 0 135px 0
+
+  .promo_header
+    font-size: 60px
+    font-weight: 700
+    line-height: 60px
+    text-transform: uppercase
+    color: #ffffff
+    text-align: center
+
+  .promo_subheader
+    margin: 0
+    margin-top: 22px
+    font-size: 36px
+    font-weight: 700
+    line-height: 36px
+    text-transform: uppercase
+    color: #ffffff
+    text-align: center
+
+  .promo_descr
+    margin: 0
+    margin-top: 23px
+    font-size: 18px
+    line-height: 24px
+    font-weight: 400
+    color: #ffffff
+    text-align: center
+
+  .promo_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    background-image: linear-gradient(0deg, $primery_color 0%, #4ce2ff 100%)
+    border: none
+    box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11)
+    border-radius: 8px
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2)
+    color: #ffffff
+
+    &:hover
+      background-image: linear-gradient(0deg, #0e4f5c 0%, #216572 100%)
+
+.benefits
+  padding: 50px 0 64px 0
+
+.title
+  margin-top: 38px
+  margin-bottom: 0
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  color: #222222
+  text-align: center
+
+.subtitle
+  margin-top: 19px
+  font-size: 17px
+  font-weight: 400
+  color: #222222
+  text-align: center
+
+.label
+  margin: 0 auto
+  width: 112px
+  height: 24px
+  padding: 4px 12px 6px 12px
+  background-color: black
+  border-radius: 5px
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  color: #ffffff
+  text-align: center
+
+.benefits .benefits_item
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 35px
+
+  .benefits_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: $primery_color
+    border-radius: 100%
+
+  .benefits_descr
+    width: 343px
+
+    .benefits_subtitle
+      font-size: 17px
+      line-height: 24px
+      font-weight: 400
+      color: $primery_color
+
+    .benefits_text
+      font-size: 15px
+      line-height: 24px
+      font-weight: 300
+      color: #202020
+
+.mobile
+    background: url('../img/background/mobile_bg.jpg') center center/cover no-repeat
+    min-height: 846px
+    padding: 48px 0 79px 0
+    .row
+        margin-top: 32px
+    &_item
+        position: relative
+        width: 320px
+        height: 280px
+        margin: 0 auto
+        margin-bottom: 19px
+        border-radius: 8px
+        &_1
+            background: url('../icons/card/card1.png') center center/cover no-repeat
+        &_2
+            background: url('../icons/card/card2.png') center center/cover no-repeat
+        &_3
+            background: url('../icons/card/card3.png') center center/cover no-repeat
+        &_4
+            background: url('../icons/card/card4.png') center center/cover no-repeat
+        &_5
+            background: url('../icons/card/card5.png') center center/cover no-repeat
+        &_6
+            background: url('../icons/card/card6.png') center center/cover no-repeat
+        &_subtitle
+            padding-top: 88px
+            font-size: 24px
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            text-align: center
+        &_plus
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 35px
+            margin: 0 auto
+            width: 26px
+            height: 26px
+            background-color: #000000
+            border-radius: 100%
+            cursor: pointer
+
+.car
+    background-color: $danger_color
+    min-height: 599px

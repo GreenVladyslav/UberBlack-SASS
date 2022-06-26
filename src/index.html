@@ -8,8 +8,9 @@
     <meta name="author" content="Vladyslav">  <!-- Автор страницы -->
     <title>BootStrapGirdUber</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">  <!-- GOOGLE FONTS -->
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- Сброс стиоей -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- Сброс стилей -->
     <link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!-- Сетка bootstrap -->
+    <link rel="stylesheet" href="css/font.css"> <!-- Icons -->
     <link rel="stylesheet" href="css/style.min.css"> <!-- А потом аж сам Css ФАЙЛ -->
 </head>
 <body>
@@ -304,19 +305,23 @@
         <div class="contaniner">
             <div class="footer_divider"></div>
             <div class="footer_wrapper">
-                <div>
+                <div> <!-- footer не подходит для колоночной верстки с помощью блоков растянул -->
                     <div class="footer_social">
                         <a href="#" class="footer_social_item">
-                            
+                            <!-- <i class="fa-brands fa-facebook-f"></i> --> <!-- fontawesome не подключен -->
+                            <span class="icon-facebook"></span>
                         </a>
                         <a href="#" class="footer_social_item">
-                            
+                            <!-- <i class="fa-brands fa-twitter"></i> -->
+                            <span class="icon-twitter"></span>
                         </a>
                         <a href="#" class="footer_social_item">
-                            
+                            <!-- <i class="fa-brands fa-linkedin"></i> -->
+                            <span class="icon-linkedin"></span>
                         </a>
                         <a href="#" class="footer_social_item">
-                            
+                            <!-- <i class="fa-brands fa-instagram"></i> -->
+                            <span class="icon-instagram"></span>
                         </a>
                     </div>
                 </div>
